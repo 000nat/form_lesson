@@ -30,6 +30,90 @@
             <!--
               ここに続きのHTMLを書いていきましょう
             -->
+            <div class="name-wrap wrap">
+              <div class="name">
+                <p class="tittle-text">名字<span> ※</span></p>
+                  <input class="box-area name-box" type="text" name="family-name" required>
+              </div>
+              <div class="name">
+                <p class="tittle-text">名前<span> ※</span></p>
+                  <input class="box-area name-box" type="text" name="first-name" required>
+              </div>
+            </div>
+            <div class="gender wrap">
+              <p class="tittle-text">性別</p>
+              <div class="gender-content ">
+                <label class="radio-mark" for="male">
+                  <input id="male" type="radio" name="sex" value="male">
+                  <span class="myradio-mark"></span>
+                  男性
+                </label>
+                <label class="radio-mark" for="female">
+                  <input id="female" type="radio" name="sex" value="female">
+                  <span class="myradio-mark"></span>
+                  女性
+                </label>
+                <label class="radio-mark" for="others">
+                  <input id="others" type="radio" name="sex" value="others">
+                  <span class="myradio-mark"></span>
+                  その他
+                </label>
+              </div>
+            </div>
+            <div class="wrap">
+              <p class="tittle-text">出身</p>
+              <div class="select-from">
+                <select  class="tittle-text from" name="from">
+                  <option value="tokyo">東京</option>
+                  <option value="tiba">千葉</option>
+                  <option value="saitama">埼玉</option>
+                  <option value="kanagawa">神奈川</option>
+                </select>
+              </div>
+            </div>
+            <div class="wrap">
+                <p class="tittle-text">Eメール<span> ※</span></p>
+                <input class="box-area" type="email" name="mail" placeholder="ex) hoge@example.com" required>
+            </div>
+            <div class="wrap">
+                <p class="tittle-text">電話番号</p>
+                <input class="box-area" type="tel" name="tel" placeholder="ex) 09012345678">
+            </div>
+            <div class="wrap">
+                <p class="tittle-text">パスワード<span> ※</span></p>
+                <input class="box-area" type="password" name="password" required>
+            </div>
+            <div class="wrap">
+                <p class="tittle-text">パスワード(確認用)<span> ※</span></p>
+                <input class="box-area" type="password" name="password" required>
+            </div>
+            <div class="wrap">
+              <p class="tittle-text">希望コース</p>
+              <div class="check-course">
+                <label class="check-course-box" for="frontend">
+                  <input id="frontend" type="checkbox" name="course" value="frontend">
+                  <span class="mycheckbox"></span>
+                  フロントエンド
+                </label>
+                <label class="check-course-box" for="backend">
+                  <input id="backend" type="checkbox" name="course" value="backend">
+                  <span class="mycheckbox"></span>
+                  バックエンド
+                </label>
+                <label class="check-course-box" for="app">
+                  <input id="app" type="checkbox" name="course" value="app">
+                  <span class="mycheckbox"></span>
+                  アプリ
+                </label>
+              </div>
+            </div>
+            <div class="wrap">
+                <p class="tittle-text">備考</p>
+                <textarea class="box-area comment" name="comment" placeholder="何かあればご記入ください"></textarea>
+            </div>
+            <div class="wrap">
+              <button class="form-button" type="submit" name="form-button" value="button">アカウント作成</button>
+            </div>
             <p class="agreement">アカウントを作成することにより、<a class="link-color" href>利用規約</a>と<a class="link-color" href>プライバシーポリシー</a>に同意するものとします。</p>
           </form>
         </div>
